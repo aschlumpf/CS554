@@ -37,11 +37,8 @@ gulp.task('js:vendor', done => {
   done();
 });
 
-gulp.task('watch', done => {
-  gulp.watch(
-    ['./src/scss/variables.scss', './src/scss/custom.scss'],
-    gulp.series('sass', 'js:vendor')
-  );
+gulp.task('watch', () => {
+  gulp.watch(sassFiles.concat(vendorJsFiles), gulp.series('sass', 'js:vendor'));
 });
 
 gulp.task('default', gulp.series('sass', 'js:vendor', 'watch'));

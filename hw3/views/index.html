@@ -14,10 +14,10 @@
       <h1>The best programming languages, in order</h1>
     </header>
     <div class="container">
-      <div class="row no-gutters">
+      <div class="row">
         <nav class="nav col-sm-12 col-md-4 col-lg-4">
           <a class="nav-link" href="#ocaml">Ocaml</a>
-          <a class="nav-link" href="#nodejs">Node.js</a>
+          <a class="nav-link" href="#typescript">TypeScript</a>
           <a class="nav-link" href="#rust">Rust</a>
           <a class="nav-link" href="#cpp">C++</a>
           <a class="nav-link" href="#go">Golang</a>
@@ -27,10 +27,12 @@
           <a class="nav-link" href="#cobol">Cobol</a>
           <a class="nav-link" href="#python">Python</a>
         </nav>
+      </div>
+      <div class="row">
         <main class="col-sm-12 col-md-8 col-lg-8">
           <div class="row no-gutters">
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="ocaml" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="ocaml" class="card h-100">
                 <h2 class="card-title">Ocaml</h2>
                 <img
                   class="card-img-top"
@@ -59,47 +61,52 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h3 class="modal-title">Simply the best.</h3>
+                      <h3 class="modal-title">No more crying at runtime</h3>
                     </div>
                     <div class="modal-body">
-                      Ocaml is much better than everything else. Seriously, the
-                      programs that are written in functional languages like
-                      Ocaml are easy to understand and write. I look forward to
-                      seeing where the
-                      <a href="https://github.com/reasonml/reason-react"
-                        target="_blank"
-                        >Reason React</a
-                      >
-                      project ends up. Proper types on the front end are
-                      definitely something we should care about.
+                      <p>
+                        Ocaml is much better than everything else. Seriously,
+                        the programs that are written in functional languages
+                        like Ocaml are easy to understand and write. The type
+                        system is so expressive and powerful that you have a
+                        very good idea of how your program will run after it is
+                        compiled. I look forward to seeing where the
+                        <a
+                          href="https://github.com/reasonml/reason-react"
+                          target="_blank"
+                          >Reason React</a
+                        >
+                        project ends up. Proper types on the front end are
+                        definitely something we should care about.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="nodejs" class="card">
-                <h2 class="card-title">Node.js</h2>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="typescript" class="card h-100">
+                <h2 class="card-title">TypeScript</h2>
                 <img
                   class="card-img-top"
-                  src="../public/images/nodejs.jpg"
-                  alt="Nodejs logo"
+                  src="../public/images/typescript.jpg"
+                  alt="TypeScript logo"
                 />
                 <div class="card-body">
                   <p class="card-text">
-                    Not really a programming language? Didn't ask.
+                    Types in a practical language? I'm in.
                   </p>
                   <a
                     class="btn btn-primary"
                     data-toggle="modal"
-                    data-target="#nodejs-modal"
+                    data-target="#typescript-modal"
                     >More info</a
                   >
                 </div>
               </div>
               <div
                 class="modal fade"
-                id="nodejs-modal"
+                id="typescript-modal"
                 tabindex="-1"
                 role="dialog"
                 aria-hidden="true"
@@ -107,18 +114,27 @@
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h3 class="modal-title">Node runs the Web</h3>
+                      <h3 class="modal-title"
+                        >TypeScript has brough sanity to web dev</h3
+                      >
                     </div>
                     <div class="modal-body">
-                      Node.js is the backend of choice for developers who don't
-                      hate themselves.
+                      <p>
+                        The amount of times that JavaScript's type system has
+                        made me lose my mind cannot be overstated. While
+                        TypeScript cannot necessarily enforce types in the way
+                        that a language like Ocaml can, it serves its purpose in
+                        a world of computing which needs a little bit of
+                        flexibility. TypeScript might be one of the best things
+                        Microsoft has ever worked on. Sure beats Windows.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="rust" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="rust" class="card h-100">
                 <h2 class="card-title">Rust</h2>
                 <img
                   class="card-img-top"
@@ -153,16 +169,18 @@
                       </h3>
                     </div>
                     <div class="modal-body">
-                      How cool is that? The power Rust gives programmers at
-                      compile time makes it the best systems programming
-                      language of all time. No more seg-faults, and no crying.
+                      <p>
+                        How cool is that? The power Rust gives programmers at
+                        compile time makes it the best systems programming
+                        language of all time. No more seg-faults, and no crying.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="cpp" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="cpp" class="card h-100">
                 <h2 class="card-title">C++</h2>
                 <img
                   class="card-img-top"
@@ -196,17 +214,19 @@
                       </h3>
                     </div>
                     <div class="modal-body">
-                      Yeah, C++ has way too many features and different ways to
-                      do the same thing. Reading code from a good and bad C++
-                      programmer makes the language look entirely different.
-                      I'll never learn this.
+                      <p>
+                        Yeah, C++ has way too many features and different ways
+                        to do the same thing. Reading code from a good and bad
+                        C++ programmer makes the language look entirely
+                        different. I'll never learn this.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="go" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="go" class="card h-100">
                 <h2 class="card-title">Go</h2>
                 <img
                   class="card-img-top"
@@ -238,15 +258,17 @@
                       <h3 class="modal-title">No clue how this really is</h3>
                     </div>
                     <div class="modal-body">
-                      Go seems cool. I just won't try it until I have to because
-                      I like to avoid Google when possible.
+                      <p>
+                        Go seems cool. I just won't try it until I have to
+                        because I like to avoid Google when possible.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="ruby" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="ruby" class="card h-100">
                 <h2 class="card-title">Ruby</h2>
                 <img
                   class="card-img-top"
@@ -276,16 +298,18 @@
                       <h3 class="modal-title">Maybe someday</h3>
                     </div>
                     <div class="modal-body">
-                      Ruby on Rails is pretty popular. Never tried it before but
-                      probably will have to at some point. It can't be worse
-                      than Python.
+                      <p>
+                        Ruby on Rails is pretty popular. Never tried it before
+                        but probably will have to at some point. It can't be
+                        worse than Python.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="c" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="c" class="card h-100">
                 <h2 class="card-title">C</h2>
                 <img
                   class="card-img-top"
@@ -317,18 +341,20 @@
                       <h3 class="modal-title">The big brain language</h3>
                     </div>
                     <div class="modal-body">
-                      Do it all yourself. Mess up? Too bad, you're just stupid.
-                      Yes, you should keep track of the logic of your program,
-                      the flow of all allocated memory, and understand how to
-                      read macros. I guess if it were that bad, C wouldn't be
-                      the basis of pretty much everything.
+                      <p>
+                        Do it all yourself. Mess up? Too bad, you're just
+                        stupid. Yes, you should keep track of the logic of your
+                        program, the flow of all allocated memory, and
+                        understand how to read macros. I guess if it were that
+                        bad, C wouldn't be the basis of pretty much everything.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="brainfuck" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="brainfuck" class="card h-100">
                 <h2 class="card-title">Brainfuck</h2>
                 <img
                   class="card-img-top"
@@ -358,18 +384,20 @@
                       <h3 class="modal-title">I won't say the name again</h3>
                     </div>
                     <div class="modal-body">
-                      The language is the basis for the realiztion of many
-                      thought experiments. There's been instances of people
-                      proving Excel to be Turing Complete by showing that it is
-                      reducible to (this) language. Same for the Rust type
-                      system... I think.
+                      <p>
+                        The language is the basis for the realiztion of many
+                        thought experiments. There's been instances of people
+                        proving Excel to be Turing Complete by showing that it
+                        is reducible to (this) language. Same for the Rust type
+                        system... I think.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="cobol" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="cobol" class="card h-100">
                 <h2 class="card-title">Cobol</h2>
                 <img
                   class="card-img-top"
@@ -401,16 +429,18 @@
                       </h3>
                     </div>
                     <div class="modal-body">
-                      But I think it's pretty funny to put it before Python.
-                      Especially given all the awful things I've heard about the
-                      language.
+                      <p>
+                        But I think it's pretty funny to put it before Python.
+                        Especially given all the awful things I've heard about
+                        the language.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm12 col-md-6 col-lg-4">
-              <div id="python" class="card">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div id="python" class="card h-100">
                 <h2 class="card-title">Python</h2>
                 <img
                   class="card-img-top"
@@ -440,14 +470,16 @@
                       <h3 class="modal-title">I don't see the appeal</h3>
                     </div>
                     <div class="modal-body">
-                      Listen, I get R is a pain to work with. To all of the
-                      people in data science (God bless you) I get it. To the
-                      rest of you... why? You need to download Python to run the
-                      code. What? You don't declare types, but the language is
-                      strongly typed. Huh? White space is used to control blocks
-                      of code, but somehow it still looks ugly. How? To all of
-                      you Leetcode itertools one-liners, stay off the boards. No
-                      one wants to see that.
+                      <p>
+                        Listen, I get R is a pain to work with. To all of the
+                        people in data science (God bless you) I get it. To the
+                        rest of you... why? You need to download Python to run
+                        the code. What? You don't declare types, but the
+                        language is strongly typed. Huh? White space is used to
+                        control blocks of code, but somehow it still looks ugly.
+                        How? To all of you Leetcode itertools one-liners, stay
+                        off the boards. No one wants to see that.
+                      </p>
                     </div>
                   </div>
                 </div>

@@ -2,11 +2,12 @@
 @import '../bootstrap/scss/functions';
 @import '../bootstrap/scss/variables';
 @import '../bootstrap/scss/mixins';
-@import '../bootstrap/scss/navbar';
+@import '../bootstrap/scss/nav';
 @import '../bootstrap/scss/modal';
 @import '../bootstrap/scss/grid';
 @import '../bootstrap/scss/buttons';
 @import '../bootstrap/scss/card';
+@import '../bootstrap/scss/utilities';
 
 body,
 html {
@@ -19,6 +20,7 @@ html {
 p {
   font-size: $secondary-font-size;
   padding-left: 5px;
+  color: $secondary;
 }
 
 h1,
