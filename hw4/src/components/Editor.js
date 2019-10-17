@@ -3,7 +3,7 @@ import React from 'react';
 class Editor extends React.Component {
   render() {
     return (
-      <textarea id='editor' onChange={this.props.handleOnChange}></textarea>
+      <textarea aria-label="Enter markdown here" id='editor' onChange={this.props.handleOnChange}></textarea>
     );
   }
 }
