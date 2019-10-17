@@ -1,0 +1,21 @@
+#container {
+  padding: 10px;
+}
+
+#editor {
+  width: 600px;
+  height: 400px;
+}
+
+#md-header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#preview {
+  overflow: auto;
+}
+
+.form {
+  margin-right: 5px;
+}
