@@ -81,11 +81,21 @@ class Preview extends React.Component {
   render() {
     return this.props.editorText ? (
       <div id='preview'>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+                body { padding: 10px }
+                h1,h2,h3,h4,h5,h6 { color: red; }
+                p { font-size: 14pt; }
+            `
+          }}
+        />
         <div
           dangerouslySetInnerHTML={{
             __html: this.converter.makeHtml(this.props.editorText)
           }}
         />
+
         <input
           className='form'
           value={this.state.fileName}
