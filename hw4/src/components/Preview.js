@@ -60,9 +60,9 @@ class Preview extends React.Component {
           </body>
         </html>
       );
-      const content = `<!DOCTYPE html>${ReactDOMServer.renderToString(
+      const content = `<!DOCTYPE html>${ ReactDOMServer.renderToString(
         fullHtml
-      )}`;
+      ) }`;
       blobUrl = URL.createObjectURL(new Blob([content], { type: 'text/html' }));
     } else {
       const content = this.props.editorText;
@@ -73,7 +73,7 @@ class Preview extends React.Component {
     const a = document.createElement('a');
     a.style = 'display: none';
     a.href = blobUrl;
-    a.download = `${this.state.fileName}.${this.state.fileType}`;
+    a.download = `${ this.state.fileName }.${ this.state.fileType }`;
     a.click();
     window.URL.revokeObjectURL(blobUrl);
   }
@@ -98,6 +98,7 @@ class Preview extends React.Component {
 
         <input
           className='form'
+          aria-label="Enter a file name"
           value={this.state.fileName}
           onChange={this.handleChange}
           placeholder='Enter a file name'
@@ -111,8 +112,8 @@ class Preview extends React.Component {
         </button>
       </div>
     ) : (
-      <p>Write some Markdown in the text area to the left to start</p>
-    );
+        <p>Write some Markdown in the text area to the left to start</p>
+      );
   }
 }
 
