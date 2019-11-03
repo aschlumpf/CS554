@@ -1,0 +1,22 @@
+{
+  "name": "hw6",
+  "version": "1.0.0",
+  "description": "HW6 for CS554",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node worker/worker.js\" \"node server/index.js\""
+  },
+  "author": "Alex Schlumpf",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bluebird": "^3.7.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "node-redis": "^0.1.7",
+    "node-redis-pubsub": "^4.0.0",
+    "redis": "^2.8.0"
+  }
+}
