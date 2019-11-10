@@ -1,7 +1,7 @@
-const NRP = require("node-redis-pubsub");
+const NRP = require('node-redis-pubsub');
 const config = {
   port: 6379,
-  scope: "people"
+  scope: 'people'
 };
 
 const nrp = new NRP(config);
