@@ -29,12 +29,17 @@ app.post('/api/people', async (req, res) => {
 app.put('/api/people/:id', async (req, res) => {
   const { id } = req.params;
   const { first_name, last_name, email, gender, ip_address } = req.body;
+  const numID = Number(id);
+  if (!numID) {
+    res.status(400).send({ error: 'ID must be a number.' });
+    return;
+  }
   try {
     const response = await nrpSender.sendMessage({
       redis: redisConnection,
       eventName: 'put',
       data: {
-        id: Number(id),
+        id: numID,
         first_name,
         last_name,
         email,
@@ -50,12 +55,17 @@ app.put('/api/people/:id', async (req, res) => {
 
 app.get('/api/people/:id', async (req, res) => {
   const { id } = req.params;
+  const numID = Number(id);
+  if (!numID) {
+    res.status(400).send({ error: 'ID must be a number.' });
+    return;
+  }
   try {
     const response = await nrpSender.sendMessage({
       redis: redisConnection,
       eventName: 'get',
       data: {
-        id: Number(id)
+        id: numID
       }
     });
     res.status(200).json(JSON.parse(response.success));
@@ -66,12 +76,17 @@ app.get('/api/people/:id', async (req, res) => {
 
 app.delete('/api/people/:id', async (req, res) => {
   const { id } = req.params;
+  const numID = Number(id);
+  if (!numID) {
+    res.status(400).send({ error: 'ID must be a number.' });
+    return;
+  }
   try {
     const response = await nrpSender.sendMessage({
       redis: redisConnection,
       eventName: 'delete',
       data: {
-        id: Number(id)
+        id: numID
       }
     });
     res.status(200).json({ success: response.success });
