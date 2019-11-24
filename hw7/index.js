@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-const cors = require('cors');
 const path = require('path');
 const redisConnection = require('./redis-connection');
 const nrpSender = require('./redis-connection/nrp-sender-shim');
