@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
@@ -12,8 +11,6 @@ app.use('/socket.io', express.static(__dirname + '/node_modules/socket.io'));
 const images = io.of('/images');
 
 app.use('/public', static);
-app.use(cors());
-app.use(bodyParser.json());
 
 app.get('/', async (req, res) => {
   res.status(200).sendFile(path.resolve('public/index.html'));
